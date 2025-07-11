@@ -1,0 +1,705 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Restabook -   Responsive Restaurant / Cafe / Pub Template</title>
+	
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#DE6325;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+		<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a href="#documenter_cover">Start - Files</a></li>
+ 
+			<li><a href="#structure">Structure</a></li>
+			<li><a href="#colors">Color</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#reserv_form">Reservation form</a></li>
+			<li><a href="#contact_form">Contact form</a></li>
+			<li><a href="#video">Video background</a></li>
+			<li><a href="#sub">Subscribe mailchimp</a></li>
+			<li><a href="#share">Share</a></li>
+			<li><a href="#map">Map</a></li>
+			<li><a href="#counter">Counter</a></li>
+			<li><a href="#sources_credits">Sources & Credits</a></li>
+			<li><a href="#update">Updates</a></li>
+			<li><a href="#thanks">Thanks</a></li>
+
+		</ol>
+	</div>
+	<div id="documenter_content">
+	
+	
+	
+	<section id="documenter_cover"><h1>Restabook</h1><h2>Responsive Restaurant / Cafe / Pub Template</h2><hr><ul><li>Created: 21/05/2020</li><li>latest Update: 21/05/2020</li><li>By: KWST</li><li><a href="http://themeforest.net/user/kwst"></a></li><li>Email: <a href="mailto:support@kwst.net">support@kwst.net</a></li></ul>
+	<p>Thanks for purchasing tempalte and for supporting my work. Restabook -   Responsive Restaurant / Cafe / Pub Template. This documentation will not teach you HTML & CSS, it's just showcase of custom elements used in template.  </p> <br>
+	<p><strong style="color:red"> Very important !</strong> In order to work php scripts (contact form , reservation form)- your site files must reside on the local host or server. In turn, you can easily edit any page (all JavaScript files will work).</p>
+<br><br><h3>Files</h3><hr class="notop"><br>
+<p>All site files are divided into folders:<br><br>
+<strong>css folder</strong> - css files that are responsible for the style themes.<br>
+<strong>js folder</strong> - javascript files.<br>
+<strong>php folder</strong> - php files.<br>
+<strong>video folder</strong> - video files.<br>
+<strong>images folder</strong> - folder that contains all images.<br>
+<strong>fonts folder</strong> - folder that contains  fonts plugin "Font-Awesome".<br>
+ 
+</p>
+
+
+</section>
+<div class="clerfix"></div>
+ 
+
+
+	
+
+<section id="structure">
+<h3>Header</h3><hr class="notop">
+ 
+<p>Contains : Logo , naviagtion ,  button "reservation" , share button , share container   , contacts , language menu  and cart container</p>
+ <pre class="brush: html">
+            <!-- header  -->
+            <header class="main-header">
+                <!-- header-top  -->
+                <div class="header-top">
+                    <div class="container">
+                        <div class="lang-wrap"><a href="#" class="act-lang">En</a><span>/</span><a href="#">Fr</a></div>
+                        <div class="header-top_contacts"><a href="#"><span>Call now:</span> +489756412322</a><a href="#"><span>Write :</span> yourmail@domain.com</a></div>
+                    </div>
+                </div>
+                <!--header-top end -->
+                <!-- header-inner -->
+                <div class="header-inner  fl-wrap">
+                    <div class="container">
+                        <div class="header-container fl-wrap">
+                            <a href="index.html" class="logo-holder"><img src="images/logo.png" alt=""></a>
+                            <div class="show-reserv_button show-rb"><span>Reservation</span> <i class="fal fa-bookmark"></i></div>
+                            <div class="show-share-btn showshare htact"><i class="fal fa-bullhorn"></i> <span class="header-tooltip">Share</span></div>
+                            <div class="show-cart sc_btn htact"><i class="fal fa-shopping-bag"></i><span class="show-cart_count">3</span><span class="header-tooltip">Your Cart</span></div>
+                            <!-- nav-button-wrap-->
+                            <div class="nav-button-wrap">
+                                <div class="nav-button">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <!-- nav-button-wrap end-->
+                            <!--  navigation -->
+                            <div class="nav-holder main-menu">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="act-link">Home <i class="fas fa-caret-down"></i></a>
+                                            <!--second level -->
+                                            <ul>
+                                                <li><a href="index.html">Parallax Image</a></li>
+                                                <li><a href="index2.html">Slider</a></li>
+                                                <li><a href="index3.html">Carousel</a></li>
+                                                <li><a href="index4.html">Slideshow</a></li>
+                                                <li><a href="index5.html">Video</a></li>
+                                                <li><a href="onepage.html">One Page</a></li>
+                                            </ul>
+                                            <!--second level end-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+                                            <!--second level -->
+                                            <ul>
+                                                <li><a href="menu.html">Menu 1</a></li>
+                                                <li><a href="menu2.html">Menu 2</a></li>
+                                                <li><a href="menu3.html">Menu 3</a></li>
+                                            </ul>
+                                            <!--second level end-->
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="blog.html">News</a></li>
+                                        <li>
+                                            <a href="#">Pages<i class="fas fa-caret-down"></i></a>
+                                            <!--second level -->
+                                            <ul>
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="product-single.html">Product Single</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="blog-single.html">Blog single</a></li>
+                                                <li><a href="404.html">404</a></li>
+                                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                            </ul>
+                                            <!--second level end-->
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- navigation  end -->                        
+                            <!-- header-cart_wrap  -->
+                            <div class="header-cart_wrap novis_cart">
+                                <div class="header-cart_title">Your Cart <span>4 items</span></div>
+                                <div class="header-cart_wrap_container fl-wrap">
+                                    <div class="box-widget-content">
+                                        <div class="widget-posts fl-wrap">
+                                            <ol>
+                                                <li class="clearfix">
+                                                    <a href="#"  class="widget-posts-img"><img src="images/menu/1.jpg" class="respimg" alt=""></a>
+                                                    <div class="widget-posts-descr">
+                                                        <a href="#" title="">Grilled Steaks</a>
+                                                        <div class="widget-posts-descr_calc clearfix">1 <span>x</span> $45</div>
+                                                    </div>
+                                                    <div class="clear-cart_button"><i class="fal fa-times"></i></div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <a href="#"  class="widget-posts-img"><img src="images/menu/2.jpg" class="respimg" alt=""></a>
+                                                    <div class="widget-posts-descr">
+                                                        <a href="#" title="">Cripsy Lobster & Shrimp Bites</a>
+                                                        <div class="widget-posts-descr_calc clearfix">2 <span>x</span> $22</div>
+                                                    </div>
+                                                    <div class="clear-cart_button"><i class="fal fa-times"></i></div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <a href="#"  class="widget-posts-img"><img src="images/menu/3.jpg" class="respimg" alt=""></a>
+                                                    <div class="widget-posts-descr">
+                                                        <a href="#" title="">Chicken tortilla soup</a>
+                                                        <div class="widget-posts-descr_calc clearfix">1 <span>x</span> $37</div>
+                                                    </div>
+                                                    <div class="clear-cart_button"><i class="fal fa-times"></i></div>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-cart_wrap_total fl-wrap">
+                                    <div class="header-cart_wrap_total_item">Subtotal : <span>$147</span></div>
+                                </div>
+                                <div class="header-cart_wrap_footer fl-wrap">
+                                    <a href="cart.html"> View Cart</a>
+                                    <a href="checkout.html">  Checkout</a>
+                                </div>
+                            </div>
+                            <!-- header-cart_wrap end  -->
+                            <!-- share-wrapper -->
+                            <div class="share-wrapper isShare">
+                                <div class="share-container fl-wrap"></div>
+                            </div>
+                            <!-- share-wrapper-end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- header-inner end  -->
+            </header>
+            <!--header end -->	
+
+
+</pre>
+
+ 
+ 
+ 
+ 
+ 
+
+ <h3>Wrapper </h3><hr class="notop">
+ 
+ 
+ 
+<p>Contains : Tempale code (text images etc ) and footer</p>
+
+
+ <pre class="brush: html">
+            <!-- wrapper -->	
+            <div id="wrapper">
+                <!--content-->	
+                <div class="content">
+				
+				.........Content.......
+				
+                </div>
+                <!-- content end -->
+            </div>
+            <!-- wrapper end -->
+
+
+
+		
+</pre>
+ <h3>Footer  </h3><hr class="notop">
+ 
+ 
+ 
+ <p>Contains : about widget , contact widget , Subscribe form ,     and language menu.  </p>
+
+
+ <pre class="brush: html">
+                <!-- footer -->
+                <div class="height-emulator fl-wrap"></div>
+                <footer class="fl-wrap dark-bg fixed-footer">
+                    <div class="container">
+                        <div class="footer-top fl-wrap">
+                            <a href="index.html" class="footer-logo"><img src="images/logo2.png" alt=""></a>
+                            <div class="lang-wrap"><a href="#" class="act-lang">En</a><span>/</span><a href="#">Fr</a></div>
+                            <div class="footer-social">
+                                <span class="footer-social-title">Follow us :</span>
+                                <ul>
+                                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- footer-widget-wrap -->
+                        <div class="footer-widget-wrap fl-wrap">
+                            <div class="row">
+                                <!-- footer-widget -->
+                                <div class="col-md-4">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">About us</div>
+                                        <div class="footer-widget-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eaque ipsa quae ab illo inventore veritatis et quasi architecto. </p>
+                                            <a href="about.html" class="footer-widget-content-link">Read more</a>                                                    	
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- footer-widget  end-->
+                                <!-- footer-widget -->
+                                <div class="col-md-4">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">Contact info  </div>
+                                        <div class="footer-widget-content">
+                                            <div class="footer-contacts footer-box fl-wrap">
+                                                <ul>
+                                                    <li><span>Call :</span><a href="#">+489756412322</a> , <a href="#">+56897456123</a></li>
+                                                    <li><span>Write  :</span><a href="#">yourmail@domain.com</a></li>
+                                                    <li><span>Find us : </span><a href="#">USA 27TH Brooklyn NY</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="contacts.html" class="footer-widget-content-link">Get in Touch</a>                                                    	
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- footer-widget  end-->
+                                <!-- footer-widget -->
+                                <div class="col-md-4">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">Subscribe</div>
+                                        <div class="footer-widget-content">
+                                            <div class="subcribe-form fl-wrap">
+                                                <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                                <form id="subscribe" class="fl-wrap">
+                                                    <input class="enteremail" name="email" id="subscribe-email" placeholder="Your Email" spellcheck="false" type="text">
+                                                    <button type="submit" id="subscribe-button" class="subscribe-button color-bg">Send </button>
+                                                    <label for="subscribe-email" class="subscribe-message"></label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- footer-widget  end-->
+                            </div>
+                        </div>
+                        <!-- footer-widget-wrap end-->
+                        <div class="footer-bottom fl-wrap">
+                            <div class="copyright">&#169; Restabook 2020 . All rights reserved. </div>
+                            <div class="to-top"><span>Back To Top </span><i class="fal fa-angle-double-up"></i></div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer end--> 
+
+</pre>
+
+
+ 
+ </section>	
+ <section id="colors">
+<h3>Colors</h3>
+<p>By default, 'Restabook' has uses three color -  dark-golden (#C19D60).<strong>To change the color, you must do the following steps:</strong>
+<br>
+1. Locate the folder css  file <strong>color.css</strong> and open it with your text editor.	
+<br>
+2.In this file, you should find a line responsible for the color theme. Look at the code below.
+<br>
+3. Just replace the six numbers and letters after the lattice in the file "color.css". Forgot to mention the theme color using hex format. If you want to add color format "rgba" then need to remove the lattice. If you do not know where to find the code of the color you click on this <a href="http://www.color-hex.com/color-palettes/" target="_blank">link</a>.</p>
+
+<pre class="brush: css">
+/*--
+	Color styles
+--*/
+.nav-holder nav li a.act-link , .nav-holder nav li a.act-scrlink, .nav-holder nav li a:hover , .th_contacts li:before , .header-cart_wrap_total_item span , .box-widget-content .widget-posts li:before , .clear-cart_button  , .section-title h4 , .menu-item-det_price span , .sd_btn:hover , .hero-social li a:hover , .to-top   , .dec-icon i , .content-back:after  , .work-time    h3 , .big-number a:hover  , .quote-box i , .dark-bg .dots-separator span:after   , .hero-menu-item-price , .hero-menu-item-title h6 span , .hero-menu_header li a:hover , .team-info h4  , .team-info:after   , .testimonilas-text:before, .testimonilas-text:after , .testi-item:after  , .swiper-slide-active .testi-item .testi-number , .star-rating , .tc-button , .column-wrap-bg-text h3 , .event-carousel-item .event-date , .ec-button  , .event-carousel-item:after , .footer-social li a , .footer-widget-title , .footer-contacts li a:hover , .hero-menu_header li:before , .hero-menu_header li.current a , .footer-widget-content-link   , .subcribe-form .subscribe-button:hover , .pdf-link:hover  , section.parallax-section.hero-section .section-title .dots-separator span:after  , .hero-menu-item-img:hover:after  , .menu-wrapper-title-item h5 , .scroll-nav li a span  , .inline-facts .num , .inline-facts h6:after , .video_section-title h4 , .big_prom:hover span , .ss-slider-cont , .box-media-zoom , .error-wrap .dots-separator span:after , .gallery-filters a.gallery-filter-active , .gallery-filters a:before , .grid-item_price span , .grid-item-details h3 span , .close-reservation-modal , .share-container  a:hover , .element-item:after , .header-top_contacts a span , .contact-details li i , .contact-details h4  , .social-widget li a , .category-widget .cat-item li a:hover , .blog-title-opt li a:hover , .pr-tags li a:hover , .post-counter li i , .blog-title-opt:after , .post.fw-post h2 a:hover , .author-social li a , .post-date strong , .shop-header  h4 span , .grid-item-details h3 a:hover , .cart-title span , .cart-totals h3 , .total-table tr  , .pr-remove i  , .hero-menu-item-title h6 a:hover  , .menu-single-preice strong , .comment-meta h6 a:hover , .leave-rating label  , .comment-numder  , .header-top a:hover  , .contact-details:after , .contact-details li a:hover , .item-related .post-date.post-price , .item-related h3 a:hover , .cs-content-wrapper h2:after , .cs-content-wrapper h3 , .cs-social li a , .cs-contacts li span , .cs-countdown-item p  , .hero-slider_btn , .grid-carousel-title  h4 , .carousle-item-number , .grid-carousel-title  h3:after , .lang-wrap a.act-lang  , .menusb a.back:before , .menusb   li i:before , .menusb  a.act-link , .pagination a:hover , .menusb a.act-scrlink , .mapzoom-in  , .mapzoom-out , .scrollContorl , .element-item.close-icon:after , .lg-actions .lg-next, .lg-actions .lg-prev {
+	color:#C19D60;
+}
+.show-cart_count , .color-bg , .header-cart_wrap_footer a:hover ,.ps__thumb-x,.ps__thumb-y , .show-reserv_button:before , .hero_promo-button a , .btn:hover , .content-inner .cf-inner .inner h2:after , .team-social li a:hover , .tc-pagination   .swiper-pagination-bullet.swiper-pagination-bullet-active  , .bold-separator:before , .bold-separator:after , .add_cart:hover , .scroller , .nice-select .option.focus,.nice-select .option.selected.focus , .daterangepicker td.active, .daterangepicker td.active:hover  , .tags-widget .tagcloud a:hover , .category-widget .cat-item li span , .pagination a.current-page , .irs-slider ,  .coupon-holder button:hover , .hero-slider-wrap_pagination   .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background:#C19D60;
+}
+.image-collge-wrap:before {
+	border-color:#C19D60;
+}
+.hero_btn , .big-number a  , .btn.border-btn  , .team-photo:before , .team-photo:after , .testimonilas-carousel-wrap:before  , .section-dec.sec-dec_top , .section-dec.sec-dec_bottom   , .footer-widget-content-link:hover , .pdf-link , .add_cart:hover   , .menu-wrapper-title:before  , .menu-wrapper-title:after , .scroll-nav li a:before  , .big_prom:before , .ss-slider-pagination .swiper-pagination-bullet:before , .nice-select:after , .element-item , .post:before , .author-content:before , .author-content:after   , .cs-countdown-item:before , .cs-media:before {
+	border-color:#C19D60;
+} 
+.loader:before  {
+	border-top-color:#C19D60;
+} 
+</pre>
+
+</section>
+
+
+<section id="images">	
+<h3>Images</h3><hr class="notop">
+<p>All images are in the folder "images".<br>       
+</p>
+<br>
+<h3>How to add and change the background image</h3>
+
+<p>To change the background you can simply change the path in the style rendered in html code, for example : </p>
+<pre class="brush: html">
+ 
+<div class="bg"  data-bg="images/bg/1.jpg"></div>
+	
+</pre>
+ 
+
+  
+</section>
+
+<section id="icons">
+	<h3>Icons</h3><hr class="notop">
+<p>	All  icons are generated by the plugin <a href="https://fontawesome.com/icons" target="_blank">"Font-Awesome"</a>. List of all the icons can be found <a href="https://fontawesome.com/icons" target="_blank">here</a>. 
+<br>
+To change the icon, you have to copy and paste the code icon at the right place for you. 
+
+</p>
+<p>For example: </p>
+<pre class="brush: html">
+
+<i class="far fa-ambulance"></i>
+
+</pre>
+
+<p>&nbsp;
+	</p>
+</section>
+<section id="reserv_form">
+	<h3>Reservation Form</h3><hr class="notop">
+<p>
+Find the file "reservation" in the folder <strong>php</strong> . In this file, find the line <strong style="color:red">$to_Email = "myemail@gmail.com";</strong> and add you e-mail.</p> 
+<p>How to forward mail to your mailbox ask your Hosting Service Provider. Because providers use different control panel site and I find it hard to predict what you use. Server side script for sending emails is in "contact.php" . Ajax submit is initialized in "scripts.js" file.</p>
+<p>&nbsp;
+	</p>
+	
+<pre class="brush: js">
+    // reservation form------------------
+    $(document).on('submit', '#reservationform', function () {
+        var a = $(this).attr("action");
+        $("#reserv-message").slideUp(750, function () {
+            $("#reserv-message").hide();
+            $.post(a, {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                phone: $("#phone").val(),
+                numperson: $("#persons").val(),
+                resdate: $("#res_date").val(),
+                restime: $("#resrv-time").val(),
+                comments: $("#comments").val()
+            }, function (a) {
+                document.getElementById("reserv-message").innerHTML = a;
+                $("#reserv-message").slideDown("slow");
+
+                if (null != a.match("success")) {
+                    $("#reserv-message").slideDown("slow");
+                }
+            });
+        });
+        return false;
+    });
+    $("#reservationform input, #reservationform textarea ").keyup(function () {
+        $("#reserv-message").slideUp(1500);
+    });
+</pre>
+</section>
+ 
+
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p>
+Find the file "contact" in the folder <strong>php</strong> . In this file, find the line <strong style="color:red">$to_Email = "myemail@gmail.com";</strong> and add you e-mail.</p> 
+<p>How to forward mail to your mailbox ask your Hosting Service Provider. Because providers use different control panel site and I find it hard to predict what you use. Server side script for sending emails is in "contact.php" . Ajax submit is initialized in "scripts.js" file.</p>
+<p>&nbsp;
+	</p>
+	
+<pre class="brush: js">
+    //   Contact form------------------
+    $(document).on('submit', '#contactform', function () {
+        var a = $(this).attr("action");
+        $("#message2").slideUp(750, function () {
+            $("#message2").hide();
+            $("#submit_cnt").attr("disabled", "disabled");
+            $.post(a, {
+                name: $("#name2").val(),
+                email: $("#email2").val(),
+                phone: $("#phone2").val(),
+                subject: $("#subject2").val(),
+                comments: $("#comments2").val()
+
+            }, function (a) {
+                document.getElementById("message2").innerHTML = a;
+                $("#message2").slideDown("slow");
+                $("#submit_cnt").removeAttr("disabled");
+                if (null != a.match("success")) $("#contactform").slideDown("slow");
+            });
+        });
+        return false;
+    });
+    $(document).on('keyup', '#contactform input, #contactform textarea', function () {
+        $("#message2").slideUp(1500);
+    });
+
+</pre>
+</section>
+
+
+
+<section id="video">
+<h3>Video</h3><hr class="notop">
+
+
+<p>This template uses Youtube Vimeo and html5  video as background . To add your video  in html file find line :</p>
+<strong>Youtube</strong>
+<pre class="brush: html">
+ 
+<div  class="background-youtube-wrapper" data-vid="oDpSPNIozt8" data-mv="1"> </div>
+</pre>
+<p>add you video id  in<strong> data-vid=""</strong> if you want add sound change data-mv="1" on data-mv="0" </p>
+<strong>Html5</strong>
+<pre class="brush: html">
+                                        <video autoplay  loop muted  class="bgvid">
+                                            <source src="video/1.mp4" type="video/mp4">
+                                        </video>
+
+</pre>
+<p>add you video id  in source <strong> src="video/1.mp4" type="video/mp4" </strong> </p>
+
+<strong>VImeo</strong>
+<pre class="brush: html">
+                                <div class="video-holder">
+                                    <div  class="background-vimeo" data-vim="34741214"> </div>
+                                </div>
+
+</pre>
+<p>add you video id  in source <strong> data-vim="34741214" </strong> </p>
+
+<p>And yet the video does not play on smartphones :( - so if a user comes to your site from a mobile browser - the background is replaced by a picture :)</p>
+ 
+ 
+
+ 
+
+
+ </section>	
+	
+<section id="sub">
+<h3>Subscribe mailchimp</h3><hr class="notop">
+
+ 
+<p>  To set up the subscription form, you must perform the following steps :</p>
+<p>
+1. Sign up  on <a href="http://mailchimp.com/" target="_blank">mailchimp</a> . It's free.	
+<br>
+2. Next, open the 	  <strong style="color:red">Lists --- Signup forms --- Embedded forms </strong> 
+<br>
+3. Locate the folder js  file <strong>scripts.js</strong> and open it with your text editor.	
+<br>
+4.In this file, you should find a code :
+<br>
+ </p>
+<pre class="brush: js">
+    //   mailchimp------------------
+    $("#subscribe").ajaxChimp({
+        language: "eng",
+        url: "https://gmail.us1.list-manage.com/subscribe/post?u=1fe818378d5c129b210719d80&amp;id=a2792f681b"
+    });
+    $.ajaxChimp.translations.eng = {
+        submit: "Submitting...",
+        0: '<i class="fal fa-check"></i> We will be in touch soon!',
+        1: '<i class="fal fa-exclamation-circle"></i> You must enter a valid e-mail address.',
+        2: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.',
+        3: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.',
+        4: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.',
+        5: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.'
+    };
+</pre>
+ 
+<p> 5.In the form  <strong style="color:red">Copy/paste onto your site </strong> copy code <strong style="color:red">"https://gmail.us1.list-manage.com/subscribe/post?u=1fe818378d5c129b210719d80&amp;id=a2792f681b" </strong>  For example : </p>
+
+<pre class="brush: js">
+
+ 
+    $('#subscribe').ajaxChimp({
+        language: 'eng',
+        url: "https://gmail.us1.list-manage.com/subscribe/post?u=1fe818378d5c129b210719d80&amp;id=a2792f681b"
+    });
+
+</pre>
+
+ </section>	
+
+
+<section id="share">
+<h3>Share your pages</h3><hr class="notop">
+<p>To configure the plugin  in file scripts.js  find line :</p>
+<pre class="brush: js"> 		
+        networks: [ "facebook", "pinterest" , "twitter", "linkedin" ]
+</pre>
+<p>You can simply add a comma in line: <strong>social: 'facebook','pinterest', 'twitter','linkedin' 'foursquare' , 'flickr', 'digg' , 'tumblr', 'vimeo' , 'stumbleupon'</strong>  separated names of social networks .  </p>
+</section>
+ 
+ <section id="map">
+<h3>Map  </h3><hr class="notop">
+<p>To configure the single  map   in  map.js file  find code :</p>
+<pre class="brush: js"> 		
+    var locations = [
+        ['Restabook in Manhattan', 40.7143528, -74.0059731],
+        ['Restabook in Bronx', 40.7168183, -73.9973402],
+        ['Restabook in Queens', 40.73334016, -73.99330616],
+    ];
+	
+</pre>
+
+<p>  To find the coordinates - visit this <a href="http://www.mapcoordinates.net/en" target="_blank"><strong style="color:red">link</strong></a>  </p>
+
+ 
+<br>
+ 
+</p>
+ 
+
+ 
+
+
+
+
+
+<p>Next step you need api key  . To find key visit this  <a href="https://developers.google.com/maps/documentation/javascript/get-api-key"><strong style="color:red">link</strong></a> . And add your key in each page in code :
+
+ </p>
+ <pre class="brush: html">
+<script  src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>  
+</pre>
+</section>
+ 
+<section id="counter">
+<h3>Counter</h3><hr class="notop">
+<p>To configure the date  in html file   find code :</p>
+<pre class="brush: js"> 		
+ <div class="cs-media-container counter-widget fl-wrap" data-countDate="09/12/2021">
+</pre>
+<p>Add your  your date in  : <strong>data-countDate="09/12/2021"</strong> .</p>
+</section> 
+ 
+
+<section id="sources_credits">
+	<h3>Sources & Credits</h3><hr class="notop">
+<p>
+	<strong>Fonts</strong><br>
+	http://www.google.com/fonts<br>
+	<br><br>
+	
+	
+	<strong>Images</strong><br>
+	Shutterstock<br>
+	http://www.shutterstock.com/
+	<br><br>
+ 
+ 	
+	</p>
+
+<p>
+	<strong>Icons</strong><br>
+		Font-Awesome<br>
+	http://fortawesome.github.io/Font-Awesome/</p>
+
+
+
+<p>
+<strong>Javascripts </strong><br><br>
+
+	<strong>JQuery</strong><br>
+	http://jquery.com</p>
+<p>
+	<strong>JQuery Easing</strong><br>
+	http://gsgd.co.uk/sandbox/jquery/easing/</p>
+<p>
+	<strong>Swiper</strong><br>
+	https://swiperjs.com/</p>
+ 
+
+	<p>
+	<strong>isotope</strong><br>
+	http://isotope.metafizzy.co/</p>
+ 	
+	
+		<p>
+	<strong> Lightgallery</strong><br>
+	http://sachinchoolur.github.io/lightGallery/</p>	
+	
+ 
+	
+</section>
+ 
+
+
+<section id="update">
+<h3>Updates</h3><hr class="notop">
+
+
+
+ </section>	
+<section id="thanks">
+	<h3>Thanks</h3><hr class="notop">
+<p>
+	Thanks for purchasing template and for supporting my work. If we fail here in this documentation, please e-mail me  <a href="mailto:support@kwst.net">support@kwst.net</a>. If you have a spare time, please go and rate my template. I will apreciate that.</p>
+<p>
+	Thanks</p>
+</section>
+
+	</div>
+</body>
+</html>

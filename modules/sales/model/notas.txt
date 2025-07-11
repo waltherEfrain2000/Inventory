@@ -1,0 +1,27 @@
+======En lugar de nuevo detalle que sea detalle de carga
+
+concatenar el numero de nota de peso
+
+======colocar por defecto el total del producto
+
+======agregat contador de seleccionados en el detalle
+
+
+en tabla ventas
+======cliente, nRemision, peso, placa, conductor, estado, acciones
+
+agregar venta de terceros:
+Seleccionar cliente, voleta, toneladas, total de la venta
+
+la venta de terceros sera una doble insercion en la tabla ventas en contabilidad y en la tabla ventasTerceros
+
+cancelar solo con privilegios de administrador
+
+Agregar campo sucursal en la tabla ventas, clientes, etc ...
+
+
+ecosol, brsas de calanterique, pergolas, caritas
+
+mddesarr_Victor / SexoDuro69Arroba
+
+si es de un tercero es a cuenta por pagar/ agregar columna de cuentacontable

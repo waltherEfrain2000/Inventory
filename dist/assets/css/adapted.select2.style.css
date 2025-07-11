@@ -1,0 +1,29 @@
+.select2-selection{
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%231d2630' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    height: auto !important;
+    background-color: #ffffff;
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #bec8d0 !important;
+    border-radius: 8px !important;
+}
+.select2-selection__rendered{
+    padding: 0.55rem 2rem 0.55rem 0.75rem !important;
+}
+.select2-selection__arrow{
+    display: none;
+}
+.select2-selection:focus{
+    border-color: var(--bs-primary);
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--bs-primary);
+}
+.select2-dropdown{
+    border-top: 1px solid #aaa !important;
+    margin-top: 2px;
+}
+.select2-container {
+    width: 100% !important;
+}

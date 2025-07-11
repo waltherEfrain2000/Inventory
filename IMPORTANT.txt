@@ -1,0 +1,2 @@
+Upload files from a folder 'restabook' to web server or local server to test.
+Important! Contact form , reservation form  , video background (youtube or vimeo) - work only on a local server or host.
